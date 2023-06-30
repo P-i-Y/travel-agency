@@ -19,7 +19,7 @@
     width: 55%;
   }
 }
-@media screen and (max-width: 110px) {
+@media screen and (max-width: 1260px) {
   header {
     width: 95%;
   }
@@ -41,36 +41,79 @@
   }
 }
 @media screen and (max-width: 950px) {
-    header .tripBox .searchBox{
-        width: 85%;
-    }
-    header .tripBox .searchBox .card{
-        margin-right: 8px;
-    }
-    .destination{
-        width: 75%;
-    }
+  header .tripBox .searchBox {
+    width: 85%;
+  }
+  header .tripBox .searchBox .card {
+    margin-right: 8px;
+  }
+  .destination {
+    width: 75%;
+  }
 }
 @media screen and (max-width: 714px) {
-     header nav ul{
-         
-        position: absolute;
-        width: 100px;
-        height: auto;
-        flex-direction: column;
-        background: #fff;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px gray;
-        justify-content: center;
-        top: 0px;
-        z-index: 999999999999999;
-        padding: 10px 20px;
-     }
-     header nav ul li{
-        padding: 8px 0px;
-        text-align: center;
-     }
-     header nav .bi-three-dots{
-        display: unset;
-     }
+  header {
+    width: 100%;
+  }
+  header nav ul {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    justify-content: center;
+    top: -100%;
+    right: 30%;
+    z-index: 999999999999999;
+    padding: 10px 20px;
+    transition: 0.5s linear;
+  }
+  /* javascript class */
+  header nav .ul_active {
+    top: 0;
+  }
+
+  header nav ul li {
+    padding: 8px 0px;
+    text-align: center;
+  }
+  header nav .bi-three-dots {
+    display: unset;
+  }
+  header .tripBox .searchBox {
+    width: 93%;
+  }
+  .offers {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 650px) {
+  header .tripBox .searchBox .card {
+    width: 140px;
+    /* height: 100%; */
+  }
+  header .tripBox .searchBox input[type="button"] {
+    position: absolute;
+    right: 10px;
+    bottom: -43px;
+    font-size: 13px;
+  }
+  .offers {
+    width: 85%;
+    margin-top: 0px;
+  }
+  .destination {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .destination .des_box, .img_box{
+    position: relative;
+    width: 55%;
+    height: auto;
+  }
+  .destination .des_box{
+  margin-top: 30px  ;
+  }
 }
