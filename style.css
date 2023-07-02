@@ -552,3 +552,14 @@ footer ul li h6 {
   border-top: 1px solid #000;
   padding-top: 3px;
 }
+.copyrightText{
+  position : absolute ;
+  /* bottom   : 4%; */
+  margin-top: 300px;
+  /* margin-bottom: 10px; */
+  /* margin-left: 100%; */
+  font-weight: 400;
+   
+  font-style: italic;
+  
+}
